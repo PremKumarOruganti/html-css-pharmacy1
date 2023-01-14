@@ -1,0 +1,536 @@
+<html>
+
+<head>
+	<title></title>
+	<meta content="" description=""/>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	
+
+<style>
+
+	body {
+	margin:0px;
+	font-family: sans-serif;
+	}
+
+	table.tbl-1 td {
+	
+	border: 0px solid;
+	padding:10px;
+	}
+
+	table {
+  	width: 100%;
+  	border-collapse: collapse;
+	}
+
+	.maintable td{
+	border: 1px solid;
+	padding:5px;
+	}
+	.maintable{
+	margin-top:11px ;
+	
+	}
+
+	table.table1 td{
+	border: 0px;
+	padding:5px;
+	margin-top:3px;
+	}
+	
+
+	.inner-table1 td{
+	padding:5px ;
+	border:1px solid;
+	border-color: black;
+	
+	}
+
+	.inner-table1{
+	margin-top:8px;
+	}
+
+	.inner-table1>tbody>tr>td:nth-of-type(1){
+	color:#6BA9C2;
+	border-color: black;
+	}
+
+	.inner-table1 tr:nth-child(even){
+	background-color: #f2f2f2;
+	}
+
+	.table2 td{
+	border: 0px;
+	padding:7px
+	}
+
+	.inner-table2 td{
+	border: 1px solid;
+	padding:9px;
+	border-color: black;
+	}
+
+	.inner-table2{
+	margin-top:8px;
+	}
+
+	.inner-table2>tbody>tr>td:nth-of-type(1){
+	color:#6BA9C2;
+	border-color: black;
+	}
+
+	.inner-table2 tr:nth-child(even){
+	background-color: #f2f2f2;
+	}
+
+	th {
+	border: 1px solid;
+	}
+
+	
+
+	.table3 td{
+	border: 0px;
+	padding:7px;
+	}
+
+	.inner-table3 td{
+	padding:9px;
+	border:1px solid;
+	border-color: black;
+	}
+
+	.inner-table3{
+	margin-top:8px;
+	}
+
+	.inner-table3>tbody>tr>td:nth-of-type(1){
+	color:#6BA9C2;
+	border-color: black;
+	}
+	
+	.inner-table3 tr:nth-child(even){
+	background-color: #f2f2f2;
+	}
+	
+	
+	.tb2{
+	vertical-align:top
+	}
+
+	.tb3{
+	vertical-align:top
+	}
+
+	.sehalogotd{
+	text-align:center;
+	width:11%; 
+	}
+
+	.sehalogo{
+	width:85%;
+	height:auto; 
+	}
+
+	.searchbar{
+	width:67%;
+	padding:6px;
+	}
+
+	.gobtnalign{
+	width:54%;
+	}
+
+	.gobtn{
+	color: white;
+	width:13%;
+	background-color:#17c3f3;
+	border-color:#17c3f3;
+	margin-left:-5px;
+	padding:6px;
+	}
+
+	.config-td{
+	width:13%;
+	}
+
+	.dashboard-td{
+	width:11%;
+	}
+
+	.user-td{
+	width:10%;
+	
+	}
+
+	.userimg{
+	width:24px;
+	font-size:17px;
+	clip-path:circle();
+	margin-bottom:1px;
+	vertical-align:middle;
+	
+	}
+	
+	.droupdownlist{
+	margin-top: 7px;
+	margin-left: -4px;
+    	border-width: 0px;
+	font-size:12px;
+	margin-bottom:3px;
+	vertical-align:middle;
+	
+	
+	}
+
+	.droupdownlist-td{
+	padding: 5px 15px 2px 1px;
+	}
+	
+
+	.Average-waiting-time-td{
+	text-align:right;
+	padding:9px;
+	}
+
+	.Average-waiting-time{
+	vertical-align:top;
+	}
+
+	.total-sentense{
+	padding-right:35px;
+	}
+
+	.call-ticket-td{
+	text-align:right;
+	
+	}
+
+	.call-ticket-btn{
+	background-color:#42B114;
+	border-width:0px;
+	color:white;
+	padding: 7px;
+    	width: 96px;
+    	height: 27px;
+	border-radius: 2px;
+	}
+
+	
+
+	.callParked-ticket-td{
+	text-align:right;
+	padding: 9px;
+	}
+
+	.callParked-ticket-btn{
+	background-color:#c30f2d;
+	border-width:0px;
+	color:white;
+	padding:7px;
+	height:26px;
+	width:135px;
+	border-radius: 2px;
+	}
+
+
+	.showing-status-span-td{
+	padding: 7px 5px 10px 25px !important;
+	}
+
+	.showing-status-span{
+	background-color:#F5B041;
+	color:white;
+	padding: 0px 5px 1px 5px;
+	font-size:16px;
+	border-radius:3px;
+	}
+
+
+	#sett-rig-icon{
+	background-color:red;
+	color:white;
+	border-radius:50%;
+	padding:4px;
+	}
+	
+	#clockicon123{
+	font-size:14px;
+	}
+	
+	
+	
+	
+	
+
+</style>
+
+</head>
+
+
+<body>
+<table class="tbl-1">
+	<tr>
+		<td class="sehalogotd">
+		<img src="Images\" class="sehalogo"/>
+		</td>
+
+		<td class="gobtnalign">
+		<input type="text" placeholder="Search Ticket...." class="searchbar"/>
+		<button class="gobtn">GO</button>
+		</td>
+
+		<td class="config-td"> 
+		<i class="fa-solid fa-gear" id="sett-rig-icon"></i> Config settings
+		</td>
+
+		<td class="dashboard-td">
+		<i class="fa-solid fa-circle-arrow-right" id="sett-rig-icon"></i> Dashboard
+		</td>
+
+		<td class="user-td">
+		<img src="Images\user.png" class="userimg"/>
+		<span class="droupdownlist-td">
+		<select class="droupdownlist">
+		<option>Samuel</option>
+		<option>hari</option>
+		<option>giri</option>
+		<option>ravi</option>
+		</select>
+		</span>	
+		</td>
+	
+	</tr>
+
+</table>
+
+<table class="maintable">
+
+<tr>
+	<td width="50%">
+		<table class="table1">
+			<tr>
+				<td>Not served Ticket</td>
+				<td class="Average-waiting-time-td"><span class="total-sentense"><span class="Average-waiting-time"><b>Average Waiting Time</b><font size="1"> (Per Person) </span></font><b><font size="5" color="red">15:02</font></span></b></td>
+			</tr>
+
+			<tr>
+				<td class="clock-icon-td"> 
+				<i class="fa-solid fa-clock" id="clockicon123"></i> Today
+				</td>
+
+				<td class="call-ticket-td">
+				<button class="call-ticket-btn">Call Ticket</button>
+				</td>
+			</tr>
+		</table>
+
+			
+				
+		<table class="inner-table1">
+					<tr>
+						<th>Ticket No.</th>
+						<th>Patient Name</th>
+						<th>MRN No</th>
+						<th>Date & Time</th>
+						<th>Status</th>
+
+					</tr>
+
+					<tr>
+						<td>763648</td>
+						<td>Steve</td>
+						<td>578967</td>
+						<td>Jan 17,2019</td>
+						<td class="showing-status-span-td">
+						<span class="showing-status-span">Waiting</span>
+						</td>
+
+					</tr>
+
+					<tr>
+						<td>763651</td>
+						<td>Roger</td>
+						<td>578966</td>
+						<td>Jan 17,2019</td>
+						<td class="showing-status-span-td">
+						<span class="showing-status-span">Waiting For Approval</span>
+						</td>
+
+					</tr>
+
+					<tr>
+						<td>763649</td>
+						<td>Amber</td>
+						<td>578965</td>
+						<td>Jan 17,2019</td>
+						<td class="showing-status-span-td">
+						<span class="showing-status-span">Waiting</span>
+						</td>
+					</tr>
+
+					<tr>
+						<td>763650</td>
+						<td>23452</td>
+						<td>578968</td>
+						<td>Jan 17,2019</td>
+						<td class="showing-status-span-td">
+						<span class="showing-status-span">Not Turned up</span>
+						</td>
+					</tr>
+
+					<tr>
+						<td>763652</td>
+						<td>Smith</td>
+						<td>578957</td>
+						<td>Jan 17,2019</td>
+						<td class="showing-status-span-td">
+						<span class="showing-status-span">Preparing Medication</span>
+						</td>
+					</tr>
+
+		</table>
+		</td>
+				
+		
+
+	
+		
+		<td class="tb2" width="25%">
+		<table class="table2">
+
+			<tr>
+				<td colspan="2">Called and Ready to Dispense</td>
+				
+			</tr>
+
+			<tr>
+				<td class="clock-icon-td">
+				<i class="fa-solid fa-clock" id="clockicon123" ></i> Today
+				</td>
+
+				<td class="call-ticket-td">
+				<button class="call-ticket-btn">Call Ticket</button>
+				</td>
+			</tr>
+
+			
+		</table>
+				
+		<table class="inner-table2">
+				
+					<tr>
+						<th>Ticket No.</th>
+						<th>Patient Name</th>
+						<th>Date & Time</th>
+						<th>Status</th>
+						
+
+					</tr>
+
+					<tr>
+						<td>763668</td>
+						<td>Steve</td>
+						<td>Jan 17,2019</td>
+						<td>Ready to Dispense</td>
+						
+
+					</tr>
+
+					<tr>
+						<td>763669</td>
+						<td>Amber</td>
+						<td>Jan 17,2019</td>
+						<td>Ready to Dispense</td>
+						
+
+					</tr>
+
+		
+		</table>
+		</td>
+
+				
+
+			
+
+		
+		<td class="tb3" width="25%">
+		<table class="table3">
+			<tr>
+				<td>Parked Tickets</td>
+				<td>&nbsp</td>
+			</tr>
+
+			<tr>
+				<td class="clock-icon-td">
+				<i class="fa-solid fa-clock" id="clockicon123"></i> Today
+				</td>
+				<td class="callParked-ticket-td">
+				<button class="callParked-ticket-btn">Call Parked Ticket</button>
+				</td>
+			</tr>
+		</table>
+
+			
+				
+		<table class="inner-table3">
+				
+					<tr>
+						<th>Ticket No.</th>
+						<th>Patient Name</th>
+						<th>Date & Time</th>
+						<th>Status</th>
+						
+
+					</tr>
+
+					<tr>
+						<td>763668</td>
+						<td>Steve</td>
+						<td>Jan 17,2019</td>
+						<td>Not Turned up</td>
+						
+
+					</tr>
+
+					<tr>
+						<td>763669</td>
+						<td>Amber</td>
+						<td>Jan 17,2019</td>
+						<td>Waiting For Approval</td>
+						
+
+					</tr>
+
+					<tr>
+						<td>763650</td>
+						<td>Michael</td>
+						<td>Jan 17,2019</td>
+						<td>Preparing Medication</td>
+						
+
+					</tr>
+
+		
+		</table>
+		</td>
+				
+				
+			
+
+
+		
+		
+	
+
+</tr>
+
+
+</table>
+
+</body>
+
+
+</html>
